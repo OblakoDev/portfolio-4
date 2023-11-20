@@ -5,6 +5,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: self-hosted
     steps:
-      - run: docker login registry.fibo.cloud -p ${{ DOCKER_PASSWORD }} -u ${{ DOCKER_USERNAME }}
+      - run: docker login registry.fibo.cloud -p ${{DOCKER_PASSWORD}} -u ${{DOCKER_USERNAME}}
       - run: docker pull registry.fibo.cloud/darkhaa/test
      
